@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form>
+        <label>Text: </label><input type="text"/><br/>
+        <label>Number: </label><input type="number" min="0" step="5"/><br/>
+        
+        <label>Range: </label> <input type="range" min="0" max="100" value="90"/><br/>
+        <label>Color: </label> <input type="color"/><br/>
+        <label>E-mail: </label> <input type="email"/><br/>
+        <label>URL: </label> <input type="url"/><br/>
+        <label>Date: </label> <input type="date"/><br/>
+        <label>Checkbox: </label> <input type="checkbox"/><br/>
+        <label>Radio: </label> <input type="radio" name="aceita"/><input type="radio" name="aceita"/><br/>
+        <label>Hidden: </label> <input type="hidden"/><br/>
+        <label>File: </label> <input type="file" multiple/><br/>
+        <label>Search: </label> <input type="search"/><br/>
+        <label>Cargo: </label>
+        <select name="role" multiple>
+            <option selected value="">Selecione o cargo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+
+        </select><br/>
+        <br/>
+         <label>Mensagem: </label>
+         <textarea name="message" id="" cols="30" rows="10"></textarea><br/>
+         
+
+        <label>Button: </label><input type="submit" value="Enviar"/><br/>
+        <button>Enviar (faz a msm coisa q o outro)</button><br/>
+        
+    </form>
+    <br/>
+    <hr/>
+    <form name="signup" 
+    onsubmit="alert('enviei o formulário');"
+    autocomplete="off" 
+    method="POST" 
+    action="https://meusite.com.br/signup">
+        Nome: <input type="text" name="name"/><br>
+        Idade: <input type="number" name="age"/><br>
+        Senha: <input type="password" name="password"/><br>
+        <button type="submit">Enviar</button>
+    </form>
+   
+</body>
+</html>
